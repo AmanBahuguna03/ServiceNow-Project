@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog">
+    <sc_cat_item_catalog action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="Leave Application Form">b0d131a483331210f6d257d6feaad325</sc_cat_item>
+        <sc_catalog display_value="Service Catalog">e0d08b13c3330100c8b837659bba8fb4</sc_catalog>
+        <sys_class_name>sc_cat_item_catalog</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-15 08:15:27</sys_created_on>
+        <sys_id>2d63f92883331210f6d257d6feaad34b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Catalog.Leave Application Form</sys_name>
+        <sys_package display_value="Leave Management" source="x_1604043_leave_ma">4d6c5c3f83ef1210f6d257d6feaad3d7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Leave Management">4d6c5c3f83ef1210f6d257d6feaad3d7</sys_scope>
+        <sys_update_name>sc_cat_item_catalog_2d63f92883331210f6d257d6feaad34b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-15 08:15:27</sys_updated_on>
+    </sc_cat_item_catalog>
+</record_update>
