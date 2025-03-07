@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget">
+    <par_dashboard_widget action="INSERT_OR_UPDATE">
+        <canvas display_value="">7d83fbe983cc2210f6d257d6feaad312</canvas>
+        <component display_value="Pie">96abe7e38d8790718022c5630a92176c</component>
+        <component_props>{"selectedElements":[],"showDataLabels":false,"dataLabelsType":"both","truncationType":"end","showRegister":true,"registerPosition":"bottom","registerOrientation":"horizontal","showRegisterOnSameLine":false,"showRegisterValue":false,"legendHorizontalAlignment":"center","legendExpandToFit":false,"showRegisterPercentage":false,"newReporting":false,"additionalGroupByConfig":[],"showHeader":true,"showTotalAggregate":false,"showSubAggregate":false,"showFirstGroupAggregate":false,"showSecondGroupAggregate":false,"hideMatrixAggregate":false,"wrapTitle":false,"showHeaderSeparator":false,"contextMenuActions":[],"headingLevel":2,"showBorder":true,"bareBorder":false,"telemetry":null,"showDataPassthrough":false,"showAdditionalGroupBySelector":false,"dataPassthrough":null,"sortByOrder":"desc","showChange":false,"showChangePercentage":false,"showTarget":false,"showForecast":false,"showForecastRange":false,"showTrend":false,"showConfidenceBand":false,"showGapPercentage":false,"showSparkline":false,"showMetricLabel":false,"showThreshold":false,"showComment":false,"followFilters":true,"showFilterIcon":true,"enableRealTimeUpdate":false,"enableDrilldown":true,"enableClickAndStay":false,"showDataTable":false,"enableCustomEmptyState":false,"emptyStateIllustration":"no-data","emptyStateHeading":"No data available.","emptyStateContent":"There are no scores available for the selected criteria. Contact your admin for more info.","emptyStateAlignment":"vertical-centered","hideDevSettings":false,"configPropModifiers":{},"showMaximumRange":false,"allowChangeDateRange":false,"showDateRangeByDefault":false,"applyDateRange":false,"numberOfPeriods":3,"showAbsolutePeriod":false,"scoreType":null,"showChangeFrom":"previous","period":"M","useDataCache":false,"cacheExpirationTime":0,"showCacheTime":true,"dateFormat":"default","showRefresh":true,"filterConfigurations":[],"dataSources":[{"isDatabaseView":false,"allowRealTime":true,"label":"Leave application","sourceType":"table","tableOrViewName":"x_1604043_leave_ma_leave_application","filterQuery":"","preferredVisualizations":["d24d53f60350de7a652caf3188a46ed2"],"id":"dGFibGV4XzE2MDQwNDNfbGVhdmVfbWFfbGVhdmVfYXBwbGljYXRpb24xNzQwOTc4NDYyNTI1","dataCategories":["trend","group","simple"]}],"componentId":"3wnpcq7a","configVersion":"23.0.0-ci-SNAPSHOT","sortBy":"value","colorConfig":{"type":"default"},"groupBy":[{"groupBy":[{"dataSource":"dGFibGV4XzE2MDQwNDNfbGVhdmVfbWFfbGVhdmVfYXBwbGljYXRpb24xNzQwOTc4NDYyNTI1","groupByField":"status","isRange":false,"isChoice":true,"isPaBucket":false}],"maxNumberOfGroups":10,"numberOfGroupsBasedOn":"NO_OF_GROUP_BASED_ON_PER_METRIC","showOthers":false,"disableRanges":false}],"metrics":[{"dataSource":"dGFibGV4XzE2MDQwNDNfbGVhdmVfbWFfbGVhdmVfYXBwbGljYXRpb24xNzQwOTc4NDYyNTI1","id":"ZEdGaWJHVjRYekUyTURRd05ETmZiR1ZoZG1WZmJXRmZiR1ZoZG1WZllYQndiR2xqWVhScGIyNHhOelF3T1RjNE5EWXlOVEkxMTc0MDk3ODQ3MjQ4Mg==","aggregateFunction":"COUNT","numberFormat":{"customFormat":false},"axisId":"primary"}],"headerTitle":"Report on the basis of Leave Approval"}</component_props>
+        <h>16</h>
+        <name>Leave approval report</name>
+        <stored_component display_value="Leave approval report">f652ab65838c2210f6d257d6feaad339</stored_component>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 06:30:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>57e4376d83cc2210f6d257d6feaad38b</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Leave approval report</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Leave Management" source="x_1604043_leave_ma">4d6c5c3f83ef1210f6d257d6feaad3d7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Leave Management">4d6c5c3f83ef1210f6d257d6feaad3d7</sys_scope>
+        <sys_update_name>par_dashboard_widget_57e4376d83cc2210f6d257d6feaad38b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 09:28:56</sys_updated_on>
+        <visualization/>
+        <w>48</w>
+        <widget_props/>
+        <x>0</x>
+        <y>10</y>
+    </par_dashboard_widget>
+</record_update>

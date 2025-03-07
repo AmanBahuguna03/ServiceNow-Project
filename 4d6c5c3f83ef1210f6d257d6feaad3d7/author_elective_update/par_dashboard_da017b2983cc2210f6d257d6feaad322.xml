@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard">
+    <par_dashboard action="DELETE">
+        <active>true</active>
+        <certified>false</certified>
+        <description/>
+        <experience/>
+        <grid>48</grid>
+        <name>Leave Approval Report</name>
+        <sys_class_name>par_dashboard</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 06:13:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>da017b2983cc2210f6d257d6feaad322</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Leave Approval Report</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Leave Management" source="x_1604043_leave_ma">4d6c5c3f83ef1210f6d257d6feaad3d7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Leave Management">4d6c5c3f83ef1210f6d257d6feaad3d7</sys_scope>
+        <sys_update_name>par_dashboard_da017b2983cc2210f6d257d6feaad322</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 06:13:58</sys_updated_on>
+        <sys_ux_app_config/>
+        <sys_ux_app_route/>
+        <sys_ux_macroponent/>
+        <sys_ux_screen/>
+        <sys_ux_screen_type/>
+    </par_dashboard>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Leave Management">4d6c5c3f83ef1210f6d257d6feaad3d7</application>
+        <file_path/>
+        <instance_id>8fcb235bdb627154199b172913961920</instance_id>
+        <instance_name>dev220882</instance_name>
+        <name>par_dashboard_da017b2983cc2210f6d257d6feaad322</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard"><par_dashboard action="INSERT_OR_UPDATE"><active>true</active><certified>false</certified><description/><experience/><grid>48</grid><name>Leave Approval Report</name><sys_class_name>par_dashboard</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-03-03 06:13:58</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>da017b2983cc2210f6d257d6feaad322</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Leave Approval Report</sys_name><sys_overrides/><sys_package display_value="Leave Management" source="x_1604043_leave_ma">4d6c5c3f83ef1210f6d257d6feaad3d7</sys_package><sys_policy/><sys_scope display_value="Leave Management">4d6c5c3f83ef1210f6d257d6feaad3d7</sys_scope><sys_update_name>par_dashboard_da017b2983cc2210f6d257d6feaad322</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-03-03 06:13:58</sys_updated_on><sys_ux_app_config/><sys_ux_app_route/><sys_ux_macroponent/><sys_ux_screen/><sys_ux_screen_type/></par_dashboard></record_update>]]></payload>
+        <payload_hash>1848426462</payload_hash>
+        <record_name>Leave Approval Report</record_name>
+        <reverted_from/>
+        <source>c96c5c3f83ef1210f6d257d6feaad3db</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 06:13:58</sys_created_on>
+        <sys_id>16017b2983cc2210f6d257d6feaad325</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1955aa3cc200000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 06:13:58</sys_updated_on>
+        <type>PAR Dashboard</type>
+        <update_guid>1a017b299dcc22106f130f33a114e224</update_guid>
+        <update_guid_history>1a017b299dcc22106f130f33a114e224:1848426462</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Leave Approval Report">d37277a983cc2210f6d257d6feaad356</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 06:20:20</sys_created_on>
+        <sys_db_object display_value="" name="par_dashboard">par_dashboard</sys_db_object>
+        <sys_id>26412f34fee7486a8952d3b4e102c819</sys_id>
+        <sys_metadata>da017b2983cc2210f6d257d6feaad322</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Leave Approval Report</sys_name>
+        <sys_package display_value="Leave Management" source="x_1604043_leave_ma">4d6c5c3f83ef1210f6d257d6feaad3d7</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Leave Management">4d6c5c3f83ef1210f6d257d6feaad3d7</sys_scope>
+        <sys_scope_delete display_value="">5cbb9b5c259b48faa7d0a5ebbc8357c1</sys_scope_delete>
+        <sys_update_name>par_dashboard_da017b2983cc2210f6d257d6feaad322</sys_update_name>
+        <sys_update_version display_value="par_dashboard_da017b2983cc2210f6d257d6feaad322">16017b2983cc2210f6d257d6feaad325</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 06:20:20</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

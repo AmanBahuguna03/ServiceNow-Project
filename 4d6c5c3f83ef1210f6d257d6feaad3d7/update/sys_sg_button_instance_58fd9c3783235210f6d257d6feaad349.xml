@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_button_instance">
+    <sys_sg_button_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <button display_value="Delete Swipe (Leave application)">d4fd9c3783235210f6d257d6feaad347</button>
+        <color_theme/>
+        <description/>
+        <disable_offline>false</disable_offline>
+        <field_name/>
+        <icon/>
+        <label>Delete</label>
+        <location>leading_swipe</location>
+        <name>Delete (Leave application)</name>
+        <order/>
+        <parent>d0fd9c3783235210f6d257d6feaad345</parent>
+        <parent_table>sys_sg_master_item</parent_table>
+        <sys_class_name>sys_sg_button_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-12 18:06:38</sys_created_on>
+        <sys_id>58fd9c3783235210f6d257d6feaad349</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Delete (Leave application)</sys_name>
+        <sys_package display_value="Leave Management" source="x_1604043_leave_ma">4d6c5c3f83ef1210f6d257d6feaad3d7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Leave Management">4d6c5c3f83ef1210f6d257d6feaad3d7</sys_scope>
+        <sys_update_name>sys_sg_button_instance_58fd9c3783235210f6d257d6feaad349</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-12 18:06:38</sys_updated_on>
+        <table/>
+    </sys_sg_button_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=58fd9c3783235210f6d257d6feaad349"/>
+</record_update>

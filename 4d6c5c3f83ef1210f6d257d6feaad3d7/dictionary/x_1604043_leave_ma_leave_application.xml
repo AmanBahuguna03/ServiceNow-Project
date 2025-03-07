@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="254ddcf383235210f6d257d6feaad315" label="Leave application" max_length="40" name="x_1604043_leave_ma_leave_application" type="collection">
+        <element label="Reason" mandatory="true" max_length="4000" name="reason" type="string"/>
+        <element label="Approver" max_length="32" name="approver" read_only="true" reference="sys_user" type="reference"/>
+        <element label="Comments" max_length="4000" name="comments" read_only="true" type="string"/>
+        <element choice="1" label="Status" max_length="40" name="status" read_only="true" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Approved" sequence="2" value="approved"/>
+                <element inactive_on_update="false" label="Rejected" sequence="3" value="rejected"/>
+                <element inactive_on_update="false" label="Cancelled" sequence="4" value="cancelled"/>
+                <element inactive_on_update="false" label="Pending" sequence="1" value="requested"/>
+            </choice>
+        </element>
+        <element label="From" max_length="40" name="from" type="glide_date"/>
+        <element label="Number Of Days" max_length="40" name="number_of_days" read_only="true" type="integer"/>
+        <element attributes="encode_utf8=false" label="Employee" max_length="32" name="employee" read_only="true" reference="sys_user" type="reference"/>
+        <element label="Leave type" mandatory="true" max_length="32" name="leave_type" reference="x_1604043_leave_ma_leave_type" type="reference"/>
+        <element label="To" max_length="40" name="to" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Application Number" max_length="40" name="number" type="string"/>
+        <index name="index">
+            <element name="approver"/>
+        </index>
+        <index name="index2">
+            <element name="employee"/>
+        </index>
+        <index name="index3">
+            <element name="leave_type"/>
+        </index>
+    </element>
+</database>

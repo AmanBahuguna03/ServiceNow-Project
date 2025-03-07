@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="dfcd983783235210f6d257d6feaad32e" label="Leave Balance" max_length="40" name="x_1604043_leave_ma_leave_balance" type="collection">
+        <element label="Leave Type" max_length="32" name="leave_type" reference="x_1604043_leave_ma_leave_type" type="reference"/>
+        <element attributes="encode_utf8=false" label="Employee" max_length="32" name="employee" reference="sys_user" type="reference"/>
+        <element label="Balance" max_length="40" name="balance" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Leave Balance Number" max_length="40" name="number" type="string"/>
+        <index name="index">
+            <element name="employee"/>
+        </index>
+        <index name="index2">
+            <element name="leave_type"/>
+        </index>
+    </element>
+</database>

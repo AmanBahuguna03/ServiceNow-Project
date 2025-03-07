@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1604043_leave_ma.FetchManagerForEmployee</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>FetchManagerForEmployee</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var FetchManagerForEmployee = Class.create();
+FetchManagerForEmployee.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    
+    getManager: function(employeeID) {
+       
+
+        var managerID = "";
+
+        var userGR = new GlideRecord('sys_user');
+        if (userGR.get(employeeID)) {
+            managerID = userGR.getValue('manager');
+        }
+
+        // If no manager, get from HR Manager Group
+        if (!managerID) {
+            var groupGR = new GlideRecord('sys_user_grmember');
+            groupGR.addQuery('group.name', 'HR Manager');  
+            groupGR.query();
+
+            if (groupGR.next()) {
+                managerID = groupGR.user.toString(); 
+            }
+        }
+
+        return managerID; // Returning the value as manager's name
+    },
+
+    type: 'FetchManagerForEmployee'
+});
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-14 03:28:56</sys_created_on>
+        <sys_id>60d2e3c4833b5210f6d257d6feaad3fb</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>FetchManagerForEmployee</sys_name>
+        <sys_package display_value="Leave Management" source="x_1604043_leave_ma">4d6c5c3f83ef1210f6d257d6feaad3d7</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Leave Management">4d6c5c3f83ef1210f6d257d6feaad3d7</sys_scope>
+        <sys_update_name>sys_script_include_60d2e3c4833b5210f6d257d6feaad3fb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-24 10:59:23</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>60d2e3c4833b5210f6d257d6feaad3fb</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-14 03:28:55</sys_created_on>
+        <sys_id>fe38eb04833b5210f6d257d6feaad375</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-14 03:28:55</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

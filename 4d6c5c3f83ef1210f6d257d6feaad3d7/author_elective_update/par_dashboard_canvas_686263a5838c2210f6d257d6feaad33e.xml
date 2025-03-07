@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_canvas">
+    <par_dashboard_canvas action="DELETE">
+        <dashboard display_value="Untitled">5062e765838c2210f6d257d6feaad3c3</dashboard>
+        <dashboard_tab/>
+        <layout>[]</layout>
+        <sys_class_name>par_dashboard_canvas</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 05:09:57</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>686263a5838c2210f6d257d6feaad33e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Leave Management" source="x_1604043_leave_ma">4d6c5c3f83ef1210f6d257d6feaad3d7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Leave Management">4d6c5c3f83ef1210f6d257d6feaad3d7</sys_scope>
+        <sys_update_name>par_dashboard_canvas_686263a5838c2210f6d257d6feaad33e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 05:09:57</sys_updated_on>
+    </par_dashboard_canvas>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Leave Management">4d6c5c3f83ef1210f6d257d6feaad3d7</application>
+        <file_path/>
+        <instance_id>8fcb235bdb627154199b172913961920</instance_id>
+        <instance_name>dev220882</instance_name>
+        <name>par_dashboard_canvas_686263a5838c2210f6d257d6feaad33e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_canvas"><par_dashboard_canvas action="INSERT_OR_UPDATE"><dashboard display_value="Untitled">5062e765838c2210f6d257d6feaad3c3</dashboard><dashboard_tab/><layout>[]</layout><sys_class_name>par_dashboard_canvas</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-03-03 05:09:57</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>686263a5838c2210f6d257d6feaad33e</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_overrides/><sys_package display_value="Leave Management" source="x_1604043_leave_ma">4d6c5c3f83ef1210f6d257d6feaad3d7</sys_package><sys_policy/><sys_scope display_value="Leave Management">4d6c5c3f83ef1210f6d257d6feaad3d7</sys_scope><sys_update_name>par_dashboard_canvas_686263a5838c2210f6d257d6feaad33e</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-03-03 05:09:57</sys_updated_on></par_dashboard_canvas></record_update>]]></payload>
+        <payload_hash>787901391</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>c96c5c3f83ef1210f6d257d6feaad3db</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 05:09:57</sys_created_on>
+        <sys_id>a06263a5838c2210f6d257d6feaad341</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1955a692f350000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 05:09:57</sys_updated_on>
+        <type>PAR Dashboard Page Canvas</type>
+        <update_guid>646263a5c88c2210b646832e7a768740</update_guid>
+        <update_guid_history>646263a5c88c2210b646832e7a768740:787901391</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">1dc0332983cc2210f6d257d6feaad36c</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 06:12:49</sys_created_on>
+        <sys_db_object display_value="" name="par_dashboard_canvas">par_dashboard_canvas</sys_db_object>
+        <sys_id>b130f7be252e445abf2a931621f4a479</sys_id>
+        <sys_metadata>686263a5838c2210f6d257d6feaad33e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Leave Management" source="x_1604043_leave_ma">4d6c5c3f83ef1210f6d257d6feaad3d7</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Leave Management">4d6c5c3f83ef1210f6d257d6feaad3d7</sys_scope>
+        <sys_scope_delete display_value="">5cbb9b5c259b48faa7d0a5ebbc8357c1</sys_scope_delete>
+        <sys_update_name>par_dashboard_canvas_686263a5838c2210f6d257d6feaad33e</sys_update_name>
+        <sys_update_version display_value="par_dashboard_canvas_686263a5838c2210f6d257d6feaad33e">a06263a5838c2210f6d257d6feaad341</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 06:12:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

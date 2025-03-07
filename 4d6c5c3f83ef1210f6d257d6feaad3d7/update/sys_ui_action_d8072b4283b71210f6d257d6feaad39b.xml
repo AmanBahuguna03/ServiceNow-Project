@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name>cancel_leave</action_name>
+        <active>true</active>
+        <client>true</client>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+
+}]]></client_script_v2>
+        <comments/>
+        <condition>(current.status == 'approved' || current.status == 'requested') &amp;&amp; current.from &gt; new GlideDate().getValue();</condition>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_button_v2>false</form_button_v2>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style/>
+        <format_for_configurable_workspace>false</format_for_configurable_workspace>
+        <hint/>
+        <isolate_script>true</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <messages/>
+        <name>Cancel Leave</name>
+        <onclick>onClick()</onclick>
+        <order>100</order>
+        <script><![CDATA[function onClick() {
+    var leaveSysID = g_form.getUniqueValue(); // Get current record sys_id
+	
+
+    var ga = new GlideAjax('CancelLeaveProcessor'); // Call Script Include
+    ga.addParam('sysparm_name', 'cancelLeave');
+    ga.addParam('sysparm_leaveID', leaveSysID); 
+
+    ga.getXMLAnswer(function(response) {
+		
+        if (response === "success") {
+            g_form.addInfoMessage("Leave successfully cancelled.");
+            g_form.setValue('status', 'cancelled'); // Change Status
+            g_form.save();
+        } else if (response === "past_date") {
+            g_form.addErrorMessage("Leave cannot be cancelled as it has already started.");
+        } else {
+				
+            g_form.addErrorMessage("Failed to cancel leave.");
+        }
+    });
+}
+]]></script>
+        <show_insert>true</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-20 08:36:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d8072b4283b71210f6d257d6feaad39b</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>Cancel Leave</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Leave Management" source="x_1604043_leave_ma">4d6c5c3f83ef1210f6d257d6feaad3d7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Leave Management">4d6c5c3f83ef1210f6d257d6feaad3d7</sys_scope>
+        <sys_update_name>sys_ui_action_d8072b4283b71210f6d257d6feaad39b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-25 07:34:17</sys_updated_on>
+        <table>x_1604043_leave_ma_leave_application</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>d8072b4283b71210f6d257d6feaad39b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-20 08:36:31</sys_created_on>
+        <sys_id>0f28ab0283b71210f6d257d6feaad3b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-20 08:36:31</sys_updated_on>
+        <table>sys_ui_action</table>
+        <use_es_latest>false</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

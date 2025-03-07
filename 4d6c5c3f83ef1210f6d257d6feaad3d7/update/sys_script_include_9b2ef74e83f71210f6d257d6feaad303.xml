@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1604043_leave_ma.CancelLeaveProcessor</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>CancelLeaveProcessor</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var CancelLeaveProcessor = Class.create();
+CancelLeaveProcessor.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    cancelLeave: function() {
+
+        var leaveID = this.getParameter('sysparm_leaveID');
+        var leaveGR = new GlideRecord('x_1604043_leave_ma_leave_application');
+
+        if (leaveGR.get(leaveID)) {
+            var currentDate = new GlideDate();
+            var leaveStartDate = leaveGR.getValue("from");
+
+            if (leaveStartDate <= currentDate) {
+                return "past_date";
+            }
+            if (leaveGR.status == 'approved' || leaveGR.status == "requested") {
+                var employeeID = leaveGR.employee;
+                var leaveType = leaveGR.leave_type;
+                var requestedDays = leaveGR.number_of_days;
+                // Updating Leave Balance Table
+                var balanceGR = new GlideRecord('x_1604043_leave_ma_leave_balance'); 
+                balanceGR.addQuery('employee', employeeID);
+                balanceGR.addQuery('leave_type', leaveType);
+                balanceGR.query();
+
+                if (balanceGR.next()) {
+                    balanceGR.balance = balanceGR.balance + requestedDays; 
+                    balanceGR.update();
+                }
+
+                // Changing status to Cancelled
+                leaveGR.status = 'cancelled';
+                leaveGR.update();
+
+                return "success";
+            } else {
+                return "not_approved"; // If my requested status is something else and not Approved
+            }
+        }
+        return "error";
+
+    },
+
+    type: 'CancelLeaveProcessor'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-20 10:22:20</sys_created_on>
+        <sys_id>9b2ef74e83f71210f6d257d6feaad303</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>CancelLeaveProcessor</sys_name>
+        <sys_package display_value="Leave Management" source="x_1604043_leave_ma">4d6c5c3f83ef1210f6d257d6feaad3d7</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Leave Management">4d6c5c3f83ef1210f6d257d6feaad3d7</sys_scope>
+        <sys_update_name>sys_script_include_9b2ef74e83f71210f6d257d6feaad303</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-25 07:27:41</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>9b2ef74e83f71210f6d257d6feaad303</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-20 10:22:19</sys_created_on>
+        <sys_id>7860041a83f71210f6d257d6feaad3f5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-20 10:22:19</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

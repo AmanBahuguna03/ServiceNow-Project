@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget">
+    <par_dashboard_widget action="DELETE">
+        <canvas display_value="">ac6263a5838c2210f6d257d6feaad344</canvas>
+        <component display_value="Filter">226449101138d0dff1abe0e1566c8b2a</component>
+        <component_props>{"filterId":"1ild9i49iv8tu7e7jo7","filterName":"Label","filterComponentType":"singleselect","datasource":{"type":"table","payload":{"table":"sys_user","primaryKey":"sys_id"}},"targets":[{"type":"table","payload":{"field":"approver","table":"x_1604043_leave_ma_leave_application","primaryKey":"sys_id"}}],"defaultSelectedItems":[],"defaultSelectedDateRange":{"range":""},"dateFilterView":"calendar-reldates","sort":"ASC","filterElementType":"pill","isShowSelectedValueInPill":true,"filterElementLayout":"vertical","enableClearFilter":true,"primaryActionLabel":"Apply","maxElements":500,"filterConfigurations":"@state.parFilters","cascadeScope":"e86263a5838c2210f6d257d6feaad341","isDashboard":true,"id":"targets","value":[{"type":"table","payload":{"field":"approver","table":"x_1604043_leave_ma_leave_application","primaryKey":"sys_id"}}],"noDebounce":true,"propLabel":"Data to filter"}</component_props>
+        <h>5</h>
+        <name/>
+        <stored_component/>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 06:03:01</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>758ee36583cc2210f6d257d6feaad391</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Leave Management" source="x_1604043_leave_ma">4d6c5c3f83ef1210f6d257d6feaad3d7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Leave Management">4d6c5c3f83ef1210f6d257d6feaad3d7</sys_scope>
+        <sys_update_name>par_dashboard_widget_758ee36583cc2210f6d257d6feaad391</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 06:03:01</sys_updated_on>
+        <visualization/>
+        <w>10</w>
+        <widget_props/>
+        <x>30</x>
+        <y>0</y>
+    </par_dashboard_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Leave Management">4d6c5c3f83ef1210f6d257d6feaad3d7</application>
+        <file_path/>
+        <instance_id>8fcb235bdb627154199b172913961920</instance_id>
+        <instance_name>dev220882</instance_name>
+        <name>par_dashboard_widget_758ee36583cc2210f6d257d6feaad391</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget"><par_dashboard_widget action="INSERT_OR_UPDATE"><canvas display_value="">ac6263a5838c2210f6d257d6feaad344</canvas><component display_value="Filter">226449101138d0dff1abe0e1566c8b2a</component><component_props>{"filterId":"1ild9i49iv8tu7e7jo7","filterName":"Label","filterComponentType":"singleselect","datasource":{"type":"table","payload":{"table":"sys_user","primaryKey":"sys_id"}},"targets":[{"type":"table","payload":{"field":"approver","table":"x_1604043_leave_ma_leave_application","primaryKey":"sys_id"}}],"defaultSelectedItems":[],"defaultSelectedDateRange":{"range":""},"dateFilterView":"calendar-reldates","sort":"ASC","filterElementType":"pill","isShowSelectedValueInPill":true,"filterElementLayout":"vertical","enableClearFilter":true,"primaryActionLabel":"Apply","maxElements":500,"filterConfigurations":"@state.parFilters","cascadeScope":"e86263a5838c2210f6d257d6feaad341","isDashboard":true,"id":"targets","value":[{"type":"table","payload":{"field":"approver","table":"x_1604043_leave_ma_leave_application","primaryKey":"sys_id"}}],"noDebounce":true,"propLabel":"Data to filter"}</component_props><h>5</h><name/><stored_component/><sys_class_name>par_dashboard_widget</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-03-03 06:03:01</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>758ee36583cc2210f6d257d6feaad391</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_overrides/><sys_package display_value="Leave Management" source="x_1604043_leave_ma">4d6c5c3f83ef1210f6d257d6feaad3d7</sys_package><sys_policy/><sys_scope display_value="Leave Management">4d6c5c3f83ef1210f6d257d6feaad3d7</sys_scope><sys_update_name>par_dashboard_widget_758ee36583cc2210f6d257d6feaad391</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-03-03 06:03:01</sys_updated_on><visualization/><w>10</w><widget_props/><x>30</x><y>0</y></par_dashboard_widget></record_update>]]></payload>
+        <payload_hash>-38512297</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>c96c5c3f83ef1210f6d257d6feaad3db</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 06:03:01</sys_created_on>
+        <sys_id>398ee36583cc2210f6d257d6feaad393</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1955a99c26b0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 06:03:01</sys_updated_on>
+        <type>PAR Dashboard Widget</type>
+        <update_guid>3d8ee365cacc2210c9f39faec699be92</update_guid>
+        <update_guid_history>3d8ee365cacc2210c9f39faec699be92:-38512297</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">adc0f32983cc2210f6d257d6feaad36f</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 06:12:49</sys_created_on>
+        <sys_db_object display_value="" name="par_dashboard_widget">par_dashboard_widget</sys_db_object>
+        <sys_id>33ae8547620b4f90b65fd49b879cd349</sys_id>
+        <sys_metadata>758ee36583cc2210f6d257d6feaad391</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Leave Management" source="x_1604043_leave_ma">4d6c5c3f83ef1210f6d257d6feaad3d7</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Leave Management">4d6c5c3f83ef1210f6d257d6feaad3d7</sys_scope>
+        <sys_scope_delete display_value="">5cbb9b5c259b48faa7d0a5ebbc8357c1</sys_scope_delete>
+        <sys_update_name>par_dashboard_widget_758ee36583cc2210f6d257d6feaad391</sys_update_name>
+        <sys_update_version display_value="par_dashboard_widget_758ee36583cc2210f6d257d6feaad391">398ee36583cc2210f6d257d6feaad393</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 06:12:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
